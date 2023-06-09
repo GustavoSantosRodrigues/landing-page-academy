@@ -235,3 +235,46 @@ span{
     width: 100%;
     object-fit: cover;
 }
+
+.workout .content{
+    flex-wrap: wrap;
+}
+
+.workout .content .frame{
+    position: relative;
+    width: 350px;
+    padding: 20px;
+    margin: 20px;
+    background: #222;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.workout .content .frame .box{
+    position: relative;
+    height: 220px;
+    width: 100%;
+    overflow:hidden ;
+}
+
+.workout .content .frame .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+    transition: 0.2s ease-in;
+}
+
+.workout .content .frame .box:hover img{
+    filter: brightness(100%);
+    transform: scale(1.08);
+}
+
+.workout .content .frame .title{
+    color: var(--green);
+    padding: 5px 0;
+}
+
+.workout .content .frame p{
+    font-size: 0.8rem;
+}

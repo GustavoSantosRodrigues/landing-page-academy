@@ -486,3 +486,21 @@ span{
     background-repeat: no-repeat;
     filter: brightness(20%);
 }
+
+.copyright{
+    text-transform: capitalize;
+    height: 40px;
+    width: 100%;
+    background: #222;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.copyright a{
+    color: var(--green);
+    margin: 0 2px;
+    text-decoration: none;
+    font-weight: lighter;
+}

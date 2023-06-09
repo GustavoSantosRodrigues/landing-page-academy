@@ -4,6 +4,7 @@
     box-sizing: border-box;
     outline: none;
     color: #fff;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -277,4 +278,94 @@ span{
 
 .workout .content .frame p{
     font-size: 0.8rem;
+}
+
+.trainers .content{
+    flex-wrap: wrap;   
+}
+
+.trainers .content .frame{
+    position: relative;
+    width: 500px;
+    padding: 30px 30px 40px 30px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    background: #222;
+}
+
+.trainers .content .frame .box{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.trainers .content .frame .box img{
+    position: absolute;
+    filter: grayscale(1);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.2s ease;
+}
+
+.trainers .content .frame .box:hover img{
+    filter: grayscale(0);
+    transform: scale(1.08);
+}
+
+.trainers .content .frame .headline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.trainers .content .frame .headline i{
+    height: 30px;
+    width: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 17px;
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 6px 1px;
+}
+
+.trainers .content .frame .headline i:hover{
+   color: var(--green);
+   transition: 0.5s ease;
+}
+
+.trainers .content .frame .headline .title{
+    color: var(--green);
+    font-size: 1.2rem;
+}
+
+.trainers .content .frame p{
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 5px;
+}
+
+.trainers .content .frame a{
+    top: 20px;
+    color: var(--green);
+    background: transparent;
+    padding: 5px 20px;
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+    font-family: sans-serif;
+}
+
+.trainers .content .frame a:hover{
+    color: #fff;
+    background-color: var(--green);
+    letter-spacing: 1.2px;
+    transition: 0.5s ease;
 }

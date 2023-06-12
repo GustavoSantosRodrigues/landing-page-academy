@@ -119,13 +119,13 @@ ol li:hover a{
 
 .highlights b{
     color: var(--green);
-    font-size: 800;
+    font-size: 13vw;
     font-family: sans-serif;
 }
 
 .highlights .tagline{
     color: #d7d7d7;
-    font-size: 1.2vw;
+    font-size: 1.9vw;
     text-align: center;
     font-weight: normal;
 }

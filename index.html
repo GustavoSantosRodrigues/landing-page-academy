@@ -5,35 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <title>Landing Academia</title>
 </head>
 <body>
-    
+
     <!-- navbar -->
+
+    <script>
+      
+
+    function navToggle(){
+
+        const togglebar = document.querySelector(".toggle");
+        const menu = document.querySelector(".menu");
+
+        togglebar.classList.toggle("active");
+        menu.classList.toggle("active");
+    };
+    </script>
+    
     <div class="navbar">
-        <a href="#" class="logo">F<b>A</b>.</a>
-        <ol>
+        <a href="#home" class="logo" onclick="navToggle();">F<b>A</b>.</a>
+        <div class="toggle" onclick="navToggle();"></div>
+        <ol class="menu">
             <li>
-                <a href="#home">Home</a>
+                <a href="#home" onclick="navToggle();">Home</a>
             </li>
             <li>
-                <a href="#about">About</a>
+                <a href="#about" onclick="navToggle();">About</a>
             </li>
             <li>
-                <a href="#workout">Workout</a>
+                <a href="#workout" onclick="navToggle();">Workout</a>
             </li>
             <li>
-                <a href="#trainers">Trainers</a>
+                <a href="#trainers" onclick="navToggle();">Trainers</a>
             </li>
             <li>
-                <a href="#diet">Diet</a>
+                <a href="#diet" onclick="navToggle();">Diet</a>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact" onclick="navToggle();">Contact</a>
             </li>
         </ol>
     </div>
+    
     <!-- end-navbar -->
 
     <!-- home-section -->
@@ -345,10 +360,9 @@
     </section>
 
     
+<script src="assets/js/scrollSticky.js"></script>
 
 
 
-
-    <script src="assets/js/main.js"></script>
 </body>
 </html>
